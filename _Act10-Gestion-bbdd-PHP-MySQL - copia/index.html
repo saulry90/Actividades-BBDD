@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA INFORMATICA</title>
+</head>
+<body>
+    <h1>TIENDA DE INFORMATICA</h1>
+    <form action="informatica.php" method="post">
+        <!--<label> DNI </label> <input type="text" name="dni"><br >
+        <label> NOMBRE </label> <input type="text" name="nombre"><br >-->
+        <!--<label> APELLIDO2 </label> <input type="text" name="apellido2"><br >
+        <label> CODIGO_DPTO </label> <input type="text" name="cod_dpto"><br >-->
+        <select name="opciones_visualizacion">
+            <option select hidden value="0"> Indique que quieres ver...</option>
+            <option value="1">Ver todos los productos de la tienda</option>
+            <option value="2">Ver los nombres y precios de los productos de la tienda</option>
+        </select>
+        <!-- <label> PRODUCTO </label> <input type="text" name="producto"><br > -->
+        <input type="submit" value="enviar" name="enviar">
+
+        </form>
+    
+</body>
+</html>

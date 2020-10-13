@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA INFORMATICA</title>
+</head>
+<body>
+    <h1>TIENDA DE INFORMATICA</h1>
+    <form action="productos.php" method="post">
+        <h2>Productos</h2>
+        <p>
+        <select name="opcionInsert">   
+            <option select hidden value="0">Elige una opción</option> 
+            <option value="1">Añadir producto</option>
+            <option value="2">Modificar producto</option>
+            <option value="3">Eliminar producto</option>
+        </select>
+        </p>
+        <label>Código de producto</label><input type="number" name="codigoProducto">
+        <label>Nombre de producto</label><input type="text" name="nproducto">
+        <label>Precio</label><input type="text" name="precioProducto">
+        <label>Código proveedor</label><input type="text" name="codProveedor">
+        <input type="submit" value="enviar" name="sendProducto">
+        <hr>
+    </form>  
+      
+    <form action="proveedores.php" method="post">
+        <h2>Proveedor</h2>
+        <p>
+        <select name="opcionInsertProv">   
+            <option select hidden value="0">Elige una opción</option> 
+            <option value="1">Añadir proveedor</option>
+            <option value="2">Modificar proveedor</option>
+            <option value="3">Eliminar proveedor</option>
+        </select>
+        </p>
+        <label>Código de proveedor</label><input type="number" name="provedorCod">
+        <label>Nombre de proveedor</label><input type="text" name="nproveedor">
+        <input type="submit" value="enviar" name="sendProveedor">
+        <hr>
+
+    </form>
+    <form action="informatica.php" method="post">
+        <h2>Visualización</h2>
+
+        <select name="opciones_visualizacion">
+            <option select hidden value="0"> Indique que quieres ver...</option>
+            <option value="1">Ver todos los productos de la tienda</option>
+            <option value="2">Ver los nombres y precios de los productos de la tienda</option>
+            <option value="3">Ver todos los porductos indicando una clave de porveedor específica</option>
+            <option value="4">Ver todos los porductos indicando que sean de un tipo en concreto</option>
+            <option value="5">Ver todos los porductos que tengan un precio igual o superior a un precio dado</option>
+            <option value="6">Ver todos los porductos entre uun precio dado</option>
+            <option value="7">Ver todos los porductos de un fabricante en concreto</option>
+            <option value="8">Ver todos los porductos con su fabricante</option>
+            <option value="9">Ver todos los porductos de un fabricante en concreto ordenado de forma ascendente por nombre</option>
+            <option value="10">Ver todos los porductos de un fabricante en concreto ordenado de forma descendente por precio</option>
+
+        </select>  <br>  
+            <label>Clave proveedor</label><input type="text" name="claveProveedor"><br>
+            <label>Tipo proveedor</label><input type="text" name="tipoProveedor"><br>
+            <label>Precio producto 1</label><input type="number" name="precioProd1"><br>
+            <label>Precio producto 2</label><input type="number" name="precioProd2"><br>
+            <label>Nombre de proveedor</label><input type="text" name="nombreProveedor"><br>
+
+            <input type="submit" value="enviar" name="verOpcion">
+    </form>
+</body>
+</html>
