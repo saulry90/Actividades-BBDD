@@ -158,7 +158,7 @@ $dbname = "bbdd_act14restaurante";
                                 $totalganado+=$pvppedido;
                             }
                         }
-                        echo "El dinero total ganado hoy es de: ".$totalganado." €<br>";
+                        echo "El dinero total ganado hoy es: ".$totalganado." €<br>";
 
                         echo "<p>Número total de platos vendidos</p>";
                         $sql2 = "SELECT COUNT(*) total FROM pedido WHERE fecha = '$date'";
